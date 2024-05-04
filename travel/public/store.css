@@ -1,0 +1,208 @@
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Roboto;
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+.bike{
+    color: goldenrod;
+    margin-left: 100px;
+}
+
+/* Landing Page */
+.landing {
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1677053177405-15b081b1eff4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnljaWNsfGVufDB8fDB8fHww') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+}
+
+.landing h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+  
+/*Product Section */
+
+.product-image-grid {
+    background: linear-gradient(to bottom right, #1f4d32, #070734);
+    padding: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .product-heading {
+    margin-top: 300px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: goldenrod;
+  }
+  
+  .product-subheading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color:rgb(250, 119, 241);
+  }
+  
+  /* Style individual images */
+  .image {
+    position: relative;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  /* Destination text */
+  .product-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .product-text h3 {
+    margin-bottom: 5px;
+  }
+  
+  .product-text p {
+    font-size: 14px;
+  }
+
+    /* gradient color for book now link */
+  .gradient {
+  /* Linear Gradient from top-left (red) to bottom-right (blue) */
+   background: linear-gradient(to bottom right, #FF0000, #0000FF); 
+      }
+      
+    
+ .gradient:hover{
+          border-color: rgb(250, 119, 241);
+          color:  #1d1d1d;
+        }
+      
+  .product-text a{
+    color: #ffffff;
+    border-color: rgb(235, 3, 3);
+    background-color: #1d1d1d;
+    border-radius: 50px;
+  }
+  
+  
+  .product-a:hover{
+    color: #ea540f;
+    border-color:  rgb(205, 221, 209);
+    background-color: #ffffff;
+  }
+
+
+  
+/* Footer */
+.footer {
+    background: linear-gradient(to bottom right, #1f4d32, #070734);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff;
+  }
+  
+  /* Copyright */
+  p {
+    margin-bottom: 10px;
+  }
+  
+
+
+  @media  screen and (max-width:768px) {
+    .destination-image-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
